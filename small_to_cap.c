@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 
 char*conver(char s[100])
 {
 	char*s_cap;
 	int len;
 	len=strlen(s);
-	s_cap=new char[len];
+	s_cap=(char*) malloc(len * sizeof(char));;
 	for(int i=0;i<len;i++)
 	{
 		if(s[i]>='a' && s[i]<='z')
@@ -26,10 +27,10 @@ char*conver_bengali(char s[100])
 	char*s_cap;
 	int len;
 	len=strlen(s);
-	s_cap=new char[len];
+	s_cap=(char*) malloc(len * sizeof(char));;
 	for(int i=0;i<len;i++)
 	{
-		s_cap[i]=s[i] + 15;
+		s_cap[i]=s[i] + 100;
 	}
 	return s_cap;
 }
