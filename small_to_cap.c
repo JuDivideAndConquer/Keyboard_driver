@@ -30,7 +30,7 @@ char*conver_bengali(char s[100])
 	s_cap=(char*) malloc(len * sizeof(char));;
 	for(int i=0;i<len;i++)
 	{
-		s_cap[i]=s[i] + 100;
+		s_cap[i]=s[i] + 980;
 	}
 	return s_cap;
 }
